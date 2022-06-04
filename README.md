@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 #### First Pages
 
 - App.js
@@ -464,3 +466,7 @@ const ProtectedRoute = ({ children, user }) => {
 
 export default ProtectedRoute;
 ```
+
+=======
+
+> > > > > > > b5b997add50242b9102b60cc47866a3041826ca1
