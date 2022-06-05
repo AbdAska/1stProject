@@ -4,7 +4,8 @@ const Error = () => {
     <div className='A16'>
       <h2>404</h2>
       <p>Page not found</p>
-      <Link to='/' className='btn'>Back Home</Link>
+      <Link to='/' className='btn'>Back Home</Link><br/>
+       <Link to='/signin' className='btn'>Go to Sign in page</Link>
     </div>
   );
 };

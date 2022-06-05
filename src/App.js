@@ -53,6 +53,8 @@ function App() {
     <Route path='signin' element={<Getin/>}/>
     <Route path='notifications' element={<Ongoing/>}/>
     <Route path='cart' element={<Ongoing/>}/>
+    <Route path='reset' element={<Ongoing/>}/>
+    <Route path='Signup' element={<Ongoing/>}/>
     <Route path='*' element={<Error/>}/>
     </Route>
     {/* so here we have enclosed or nested all other components inside the home one */}
