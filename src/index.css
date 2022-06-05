@@ -699,15 +699,106 @@ ul {
   color: #F4F4F4;
 }
 .A29{
-  padding-right: 1rem;
-  width: 96vw;
-  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
 
+  /* border: 1px solid red; */
 }
 .A30{
-  max-width: 40rem;
-
+  width: 25rem;
+  height: 30rem;
+  padding-left: 5rem;
+    flex-shrink: 1;
+  line-height: 0.5rem;
+  
   /* border: 1px solid red; */
+}
+.A30 h1{
+  font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+    color: white;
+}
+.A30 p{
+  font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: white;
+}
+.A30 label{
+  font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: white;
+}
+.inputcon{
+  color: white;
+  line-height: 0.1rem;
+
+}
+.inputcon h5{
+  line-height: 0.1rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.speinput{
+  display: grid;
+  grid-template-columns: 93% 7%;
+  margin: 10px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+  line-height: 0.2rem;
+}
+.A31{
+  width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 1rem;
+}
+.inputcon2 {
+  color: white;
+  line-height: 0.1rem;
+
+}
+
+.inputcon2 h5 {
+  line-height: 0.1rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.speinput2 {
+  display: grid;
+  grid-template-columns: 93% 7%;
+  margin: 10px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+  line-height: 0.2rem;
+}
+
+.A32 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 1rem;
 }
 .link {
   color: var(--grey-500);
