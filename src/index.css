@@ -829,12 +829,13 @@ ul {
   border: 1px solid white;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
-  padding: 1rem 0.75rem;
+  padding: 0.75rem 0.75rem;
   box-shadow: var(--shadow-1);
   transition: var(--transition);
   text-transform: capitalize;
   display: inline-block;
   width: 14rem;
+  height: 3rem;
   border-radius: 2rem;
 
 }
@@ -862,6 +863,7 @@ ul {
   display: inline-block;
   width: 14rem;
   border-radius: 2rem;
+  height: 3rem;
 
 }
 
