@@ -43,16 +43,7 @@ html {
 
   /* fonts  */
 
-  --small-text: 0.875rem;
-  --extra-small-text: 0.7em;
-  /* rest of the vars */
-  --backgroundColor: var(--grey-50);
-  --textColor: var(--grey-900);
-  --borderRadius: 0.25rem;
-  --letterSpacing: 1px;
-  --transition: 0.3s ease-in-out all;
-  --max-width: 1120px;
-  --fixed-width: 600px;
+
 
   /* box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -276,30 +267,41 @@ ul {
 
 
 .header {
-  position: absolute;
-  width: 1240px;
-  height: 57px;
-  left: 60px;
-  top: 40px;
+  display: flex;
+  max-width: 1920px;
+  flex-wrap: nowrap;
+  width: 97vw;
+  height: 6rem;
+  flex-direction: row;
+  padding-top: 2rem;
+  justify-content: space-between;
+
+  /* border: 2px solid red; */
+
+
   /* background: darkgoldenrod; */
 }
 .A1{
-  position: absolute;
-    width: 150px;
-    height: 40px;
-    top: 5px;
+  order: 1;
+  flex-basis: 3rem;
+  flex-grow: 33;
+  align-self: flex-start;
+  padding-left: 2rem;
 }
 .A2 {
-  position: absolute;
-  left: 57.29%;
-  right: 39.11%;
-  top: 40%;
+  order: 1;
+    flex-basis: 1rem;
+    flex-grow: 5;
+    flex-shrink: 1;
+    align-self: flex-start;
+    padding-top: 1rem;
   
   font-family: 'Overpass';
     font-style: normal;
     font-weight: 300;
-    font-size: 15px;
-    line-height: 16px;
+    font-size: 1rem;
+    line-height: 1rem;
+    
     /* identical to box height, or 67% */
   
     text-align: center;
@@ -310,60 +312,57 @@ ul {
 }
 .A3
 {
-  position: absolute;
-    left: 63.23%;
-    right: 29.69%;
-    top: 40%;
-   
+  order: 1;
+    flex-basis: 1rem;
+    flex-grow: 5;
+    flex-shrink: 2;
+    align-self: flex-start;
+    padding-top: 1rem;
+  
     font-family: 'Overpass';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 15px;
-      line-height: 16px;
-      /* identical to box height, or 67% */
-    
-      text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1rem;
       text-transform: uppercase;
     
       color: #F4F4F4;
 }
-.A1 {
-  position: absolute;
-  width: 150px;
-  height: 40px;
-  top: 5px;
-}
 
 .A4 {
-  position: absolute;
-  left: 72.66%;
-    right: 21.67%;
-  top: 40%;
-
-  font-family: 'Overpass';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 16px;
+  order: 1;
+    flex-basis: 1rem;
+    flex-grow: 5;
+    flex-shrink: 1;
+    align-self: flex-start;
+    padding-top: 1rem;
+  
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1rem;
   /* identical to box height, or 67% */
 
   text-align: center;
   text-transform: uppercase;
 
-  color: #F4F4F4;
+   color: #F4F4F4;
 
 }
 .A5 {
-  position: absolute;
-  left: 80.68%;
-    right: 14.84%;
-  top: 40%;
-
-  font-family: 'Overpass';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 16px;
+  order: 1;
+    flex-basis: 1rem;
+    flex-grow: 5;
+    flex-shrink: 1;
+    align-self: flex-start;
+    padding-top: 1rem;
+  
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1rem;
   /* identical to box height, or 67% */
 
   text-align: center;
@@ -373,27 +372,39 @@ ul {
 
 }
 .A6 {
-  position: absolute;
-  left: 88.35%;
-    right: 10.56%;
-  top: 30%;
+  order: 1;
+    flex-basis: 1rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: flex-end;
+    padding-bottom: 1.6rem;
+
+
   /* identical to box height, or 67% */
 
   color: #F4F4F4;
 
 }
 .A7 {
-  position: absolute;
-  left: 91.2%;
-  top: 30%;
-  /* identical to box height, or 67% */
+  order: 1;
+    flex-basis: 1rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: flex-end;
+    padding-bottom: 1.6rem;
+
+
   color: #F4F4F4;
 
 }
 .A8 {
-  position: absolute;
-  left: 96%;
-  top: 30%;
+  order: 1;
+    flex-basis: 2rem;
+    flex-grow: 2;
+    flex-shrink: 1;
+    align-self: flex-end;
+    padding-bottom: 1.6rem;
+  
   /* identical to box height, or 67% */
 
   color: #F4F4F4;
@@ -686,6 +697,17 @@ ul {
   text-transform: uppercase;
 
   color: #F4F4F4;
+}
+.A29{
+  padding-right: 1rem;
+  width: 96vw;
+  /* border: 1px solid red; */
+
+}
+.A30{
+  max-width: 40rem;
+
+  /* border: 1px solid red; */
 }
 .link {
   color: var(--grey-500);

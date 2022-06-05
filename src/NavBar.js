@@ -24,7 +24,7 @@ const NavBar = () => {
     <NavLink to='/signin' className='A5'> Sign in</NavLink>
     <NavLink to='/notifications' className='A6'>
     <i class="fa-solid fa-bell"></i></NavLink>
-    <div className='A7'><i class="fa-solid fa-cart-shopping"></i></div>
+    {/* <div className='A7'><i class="fa-solid fa-cart-shopping"></i></div> */}
     <NavLink to='/cart' className='A7'>
     <i class="fa-solid fa-cart-shopping"></i></NavLink>
     <NavLink to='/hhh' className='A8'>

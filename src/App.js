@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Error from './pages/Error';
 import SharedLayout from './pages/SharedLayout';
 import Ongoing from './ongoing';
+import Getin from './pages/Getin';
 
 // function App() {
 //   return <BrowserRouter>
@@ -49,7 +50,7 @@ function App() {
     <Route path='orders' element={<Ongoing/>}/>
     <Route path='message' element={<Ongoing/>}/>
     {/* clearly we dont need slashes in paths in version 6/// also contents of the components can also be written in routes in element tags */}
-    <Route path='signin' element={<Ongoing/>}/>
+    <Route path='signin' element={<Getin/>}/>
     <Route path='notifications' element={<Ongoing/>}/>
     <Route path='cart' element={<Ongoing/>}/>
     <Route path='*' element={<Error/>}/>
