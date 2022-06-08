@@ -4,6 +4,7 @@ import Error from './pages/Error';
 import SharedLayout from './pages/SharedLayout';
 import Ongoing from './ongoing';
 import Getin from './pages/Getin';
+import Dashboard from './pages/Dashboard';
 
 // function App() {
 //   return <BrowserRouter>
@@ -56,6 +57,7 @@ function App() {
     <Route path='reset' element={<Ongoing/>}/>
     <Route path='Signup' element={<Ongoing/>}/>
     <Route path='*' element={<Error/>}/>
+    <Route path='Dashboard' element={<Dashboard/>}/>
     </Route>
     {/* so here we have enclosed or nested all other components inside the home one */}
 
