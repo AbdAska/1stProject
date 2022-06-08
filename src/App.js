@@ -1,10 +1,12 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+// import {ProtectedRoute} from 'react-router-dom'
 import Home from './pages/Home';
 import Error from './pages/Error';
 import SharedLayout from './pages/SharedLayout';
 import Ongoing from './ongoing';
 import Getin from './pages/Getin';
 import Dashboard from './pages/Dashboard';
+import ResetPass from './pages/resetpass';
 
 // function App() {
 //   return <BrowserRouter>
@@ -54,7 +56,7 @@ function App() {
     <Route path='signin' element={<Getin/>}/>
     <Route path='notifications' element={<Ongoing/>}/>
     <Route path='cart' element={<Ongoing/>}/>
-    <Route path='reset' element={<Ongoing/>}/>
+    <Route path='reset' element={<ResetPass/>}/>
     <Route path='Signup' element={<Ongoing/>}/>
     <Route path='*' element={<Error/>}/>
     <Route path='Dashboard' element={<Dashboard/>}/>

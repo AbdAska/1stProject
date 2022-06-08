@@ -706,6 +706,7 @@ ul {
 }
 .A29{
   display: flex;
+  font-family: 'Ubuntu', sans-serif;
   width: 97vw;
   max-width: 1920px;
   flex-wrap: nowrap;
@@ -716,14 +717,16 @@ ul {
   /* border: 1px solid red; */
 }
 .AI{
-  width: 43rem;
+  /* width: 28rem; */
+  max-height: 25rem;
   display: flex;
   flex-shrink: 5;
   flex-grow: 0;
 }
+
 .A30{
-  width: 25rem;
-  max-width: 450px;
+  /* width: 25rem; */
+  max-width: 24rem;
   height: 32rem;
   padding-left: 5rem;
   flex-shrink: 1;
@@ -733,7 +736,7 @@ ul {
   /* border: 1px solid red; */
 }
 .A30 h1{
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 2.5rem;
@@ -741,7 +744,7 @@ ul {
     color: white;
 }
 .A30 p{
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1rem;
@@ -749,7 +752,7 @@ ul {
     color: white;
 }
 .A30 label{
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1rem;
