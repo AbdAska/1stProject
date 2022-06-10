@@ -855,6 +855,34 @@ ul {
   flex-direction: row;
   justify-content: space-around;
 }
+.continer {
+  height: 3.7rem;
+  width: 17.5rem;
+  
+}
+
+.character {
+  line-height: 3.7rem;
+  font-size: 2.25rem;
+  color: white;
+  background-color: #3A4385;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+.character:first-child {
+  margin-left: 0.2rem;
+}
+
+.character--inactive {
+  background-color: rgba(255, 255, 255, 0.479);
+}
+
+.character--selected {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.479);
+}
 
 .btn1 {
   cursor: pointer;

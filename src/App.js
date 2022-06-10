@@ -8,6 +8,7 @@ import Getin from './pages/Getin';
 import Dashboard from './pages/Dashboard';
 import ResetPass from './pages/resetpass';
 import Resett from './pages/Resett';
+import Resetpasfinal from './pages/resetpasfinal';
 
 // function App() {
 //   return <BrowserRouter>
@@ -61,6 +62,7 @@ function App() {
     <Route path='cart' element={<Ongoing/>}/>
     <Route path='reset' element={<ResetPass/>}/>
     <Route path='Resett' element={<Resett/>}/>
+    <Route path='resetpasfinal' element={<Resetpasfinal/>}/>
     <Route path='Signup' element={<Ongoing/>}/>
     <Route path='*' element={<Error/>}/>
     
