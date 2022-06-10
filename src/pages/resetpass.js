@@ -14,7 +14,7 @@ const [values, setValues] =useState({email:""})
     const handleFormSubmit = (event) =>{
     event.preventDefault();
     setError(Validation(values));
-   {!values.email ||navigate("/Dashboa")}
+   {!values.email ||!/\S+@\S+\.\S+/.test(values.email) || navigate("/Resett")}
     }
 
     return <div className="A29">

@@ -7,6 +7,7 @@ import Ongoing from './ongoing';
 import Getin from './pages/Getin';
 import Dashboard from './pages/Dashboard';
 import ResetPass from './pages/resetpass';
+import Resett from './pages/Resett';
 
 // function App() {
 //   return <BrowserRouter>
@@ -54,12 +55,15 @@ function App() {
     <Route path='message' element={<Ongoing/>}/>
     {/* clearly we dont need slashes in paths in version 6/// also contents of the components can also be written in routes in element tags */}
     <Route path='signin' element={<Getin/>}/>
+    <Route path='Dashboard' element={<Dashboard/>}/>
+    
     <Route path='notifications' element={<Ongoing/>}/>
     <Route path='cart' element={<Ongoing/>}/>
     <Route path='reset' element={<ResetPass/>}/>
+    <Route path='Resett' element={<Resett/>}/>
     <Route path='Signup' element={<Ongoing/>}/>
     <Route path='*' element={<Error/>}/>
-    <Route path='Dashboard' element={<Dashboard/>}/>
+    
     </Route>
     {/* so here we have enclosed or nested all other components inside the home one */}
 
