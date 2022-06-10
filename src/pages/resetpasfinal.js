@@ -1,4 +1,5 @@
 import image from './imagea.png'
+import Popup from 'reactjs-popup'
 import { useState } from 'react'
 import Validation from './Validation'
 import { useNavigate } from 'react-router-dom'
@@ -54,6 +55,7 @@ return <div className="A29">
         </div>
         <div  style={{paddingLeft:'2.3rem', paddingTop:'1rem'}}>
         <button className='btn1' onClick={handleSubmit}>Set Password</button><br/>
+        
         </div>
      
 

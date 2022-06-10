@@ -8,7 +8,7 @@ const Resett = () =>{
     const navigate= useNavigate();
     const [values, setValues] = useState()
 const handleChange = (event) =>{
-   setValues({...values})
+   
 }
 const handlesubmit = (event) =>{
     event.preventDefault();
@@ -23,7 +23,7 @@ return <div className="A29">
          <p style={{lineHeight:'150%'}}>Enter a 4-digit code which is sent to your Phone number. Kindly enter that code here to reset your accont password.<br/> Thanks</p>
          <div className='inputotp'>
 
-        <VerificationInput validChars="0-9" length={4} value={values} autoFocus onChange={handleChange} 
+        <VerificationInput validChars="0-9" length={4} autoFocus onChange={handleChange} 
             removeDefaultStyles
   classNames={{
     container: "continer",
