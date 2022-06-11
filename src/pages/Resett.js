@@ -10,10 +10,10 @@ const Resett = () =>{
     const renderer = ({minutes, seconds, completed }) => {
   if (completed) {
     // Render a completed state
-    return  <button className="btn1"> Resend Code</button>;
+    return  <button onClick={window.location.reload()} className="btn1"> Resend Code</button>;
   } else {
     // Render a countdown
-    return <span>({minutes}:{seconds})</span>;
+    return <span>Resend Confirmation Code:({minutes}:{seconds})</span>;
   }
 };
     
@@ -50,9 +50,9 @@ return <div className="A29">
         </div> <br/><br/>
         <div style={{textAlign:'center'}}>
         <div style={{color:'white', fontSize:'1rem'}}>
-        <p>Resend Confirmation Code:
+        
         <Countdown date={ Date.now() + 120000} renderer={renderer}/>
-        </p></div> <br/><br/>
+        </div> <br/><br/>
     <button  className='btn1' onClick={handlesubmit}>Verify Code</button>
     </div>
          </form>
