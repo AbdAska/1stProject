@@ -1,11 +1,15 @@
 import image from './imagea.png'
-import Popup from 'reactjs-popup'
+import Popup from './Popup'
 import { useState } from 'react'
 import Validation from './Validation'
 import { useNavigate } from 'react-router-dom'
+// import Popup from './Popup'
 const Resetpasfinal =() =>{
     const [values, setValues] =useState({password:'', password1:''})
     const [errors, seterrors] =useState({})
+    const [isOpen, setIsOpen] = useState(false);
+    const [submit, setSubmit] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
 
     const handleChange= (event) =>{
         setValues({...values, [event.target.name]:event.target.value})
@@ -14,10 +18,10 @@ const Resetpasfinal =() =>{
     const handleSubmit =(event) =>{
     event.preventDefault();
     seterrors(Validation(values))
-    {!values.password|| !values.password1 || values.password.length< 5 || values.password1.length< 5 || values.password != values.password1 || Navigate('/popup')}
+    {!values.password|| !values.password1 || values.password.length< 5 || values.password1.length< 5 || values.password != values.password1 || setIsOpen(true)}
 
     }
-return <div className="A29">
+return <><div className="A29">
      <img src={image} className='AI' alt={image}></img>
      <div className='A30'>
      <form>
@@ -54,6 +58,7 @@ return <div className="A29">
         {errors.password2 && <p style={{color:'red', lineHeight:'50%'}}>{errors.password2}</p>}
         </div>
         <div  style={{paddingLeft:'2.3rem', paddingTop:'1rem'}}>
+        {/* {submit(true) && <p style={{color:'red', lineHeight:'50%'}}>Password Reset Successful</p>} */}
         <button className='btn1' onClick={handleSubmit}>Set Password</button><br/>
         
         </div>
@@ -62,6 +67,8 @@ return <div className="A29">
      
       </form>
      </div>
+     {isOpen && <Popup/>}
     </div>
+    </>
 }
 export default Resetpasfinal

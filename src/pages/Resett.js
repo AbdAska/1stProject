@@ -2,9 +2,21 @@ import { Link } from "react-router-dom";
 import VerificationInput from "react-verification-input";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import image from './image.png'
+import image from './image.png';
+import Countdown from 'react-countdown';
+
 
 const Resett = () =>{
+    const renderer = ({minutes, seconds, completed }) => {
+  if (completed) {
+    // Render a completed state
+    return  <button className="btn1"> Resend Code</button>;
+  } else {
+    // Render a countdown
+    return <span>({minutes}:{seconds})</span>;
+  }
+};
+    
     const navigate= useNavigate();
     const [values, setValues] = useState()
 const handleChange = (event) =>{
@@ -35,9 +47,14 @@ return <div className="A29">
         {/* <input type='number' onChange={handleChange} name='OTP'></input> */}
         
             
-        </div> <br/>
-    <button className='btn1' onClick={handlesubmit}>Verify Code</button>
-
+        </div> <br/><br/>
+        <div style={{textAlign:'center'}}>
+        <div style={{color:'white', fontSize:'1rem'}}>
+        <p>Resend Confirmation Code:
+        <Countdown date={ Date.now() + 120000} renderer={renderer}/>
+        </p></div> <br/><br/>
+    <button  className='btn1' onClick={handlesubmit}>Verify Code</button>
+    </div>
          </form>
          </div>
          </div>

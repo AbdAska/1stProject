@@ -60,6 +60,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
+  height: 100%;
+  width: 100%;
   line-height: 1.75;
   background-image: url('Group7.png');
   background-repeat: no-repeat;
@@ -128,34 +130,7 @@ ul {
 }
 /* buttons */
 
-.btn {
-  cursor: pointer;
-  color: var(--white);
-  background: var(--primary-500);
-  border: transparent;
-  border-radius: var(--borderRadius);
-  letter-spacing: var(--letterSpacing);
-  padding: 0.375rem 0.75rem;
-  box-shadow: var(--shadow-1);
-  transition: var(--transition);
-  text-transform: capitalize;
-  display: inline-block;
-}
-.btn:hover {
-  background: var(--primary-700);
-  box-shadow: var(--shadow-3);
-}
-.btn-hipster {
-  color: var(--primary-500);
-  background: var(--primary-200);
-}
-.btn-hipster:hover {
-  color: var(--primary-200);
-  background: var(--primary-700);
-}
-.btn-block {
-  width: 100%;
-}
+
 
 /* alerts */
 .alert {
@@ -855,6 +830,12 @@ ul {
   flex-direction: row;
   justify-content: space-around;
 }
+.A37{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .continer {
   height: 3.7rem;
   width: 17.5rem;
@@ -883,50 +864,79 @@ ul {
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.479);
 }
-body.active-modal {
-  overflow-y: hidden;
-}
-
-.btn-modal {
-  padding: 10px 20px;
-  display: block;
-  margin: 100px auto 0;
-  font-size: 18px;
-}
-
-.modal,
-.overlay {
-  width: 100vw;
-  height: 100vh;
+.bg-modal{
+  width: 100%;
+  height: 100%;
+  background: #00000080;
+  position: absolute;
+  padding-bottom: 0%;
   top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
-  position: fixed;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  /* border: 1px solid red; */
+
+}
+.modal-content{
+  width: 28rem;
+  height: 28rem;
+  /* line-height: 100%; */
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  
+  background: #f4f4f4;
+  border-radius: 1.4rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: Ubuntu;
+}
+.inputotp{
+  text-align: center;
+}
+.btn {
+  cursor: pointer;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+  background-color: #3A4385;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.75rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+  width: 14rem;
+  height: 3rem;
+  border-radius: 2rem;
 }
 
-.overlay {
-  background: rgba(49, 49, 49, 0.8);
+.btn:hover {
+  background: var(--primary-700);
+  box-shadow: var(--shadow-3);
 }
 
-.modal-content {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  line-height: 1.4;
-  background: #f1f1f1;
-  padding: 14px 28px;
-  border-radius: 3px;
-  max-width: 600px;
-  min-width: 300px;
+.btn-hipster {
+  color: var(--primary-500);
+  background: var(--primary-200);
 }
 
-.close-modal {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 5px 7px;
+.btn-hipster:hover {
+  color: var(--primary-200);
+  background: var(--primary-700);
+}
+
+.btn-block {
+  width: 100%;
 }
 .btn1 {
   cursor: pointer;
