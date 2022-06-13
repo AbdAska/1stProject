@@ -1,7 +1,10 @@
 const Validation = (values) =>{
     let errors={};
     if(!values.username){
-    errors.username="Username is required."
+    errors.username="Field must be filled"
+    }
+     if(!values.username1){
+    errors.username1="Field must be filled"
     }
 if(!values.password){
     errors.password="Password is required."

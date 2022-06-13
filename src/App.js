@@ -9,6 +9,10 @@ import Dashboard from './pages/Dashboard';
 import ResetPass from './pages/resetpass';
 import Resett from './pages/Resett';
 import Resetpasfinal from './pages/resetpasfinal';
+import SignUp from './pages/SignUp';
+import SignUp2 from './pages/Signup2';
+import SignUp3 from './pages/Signup3';
+import SignUpp from './pages/Signup4';
 
 // function App() {
 //   return <BrowserRouter>
@@ -63,7 +67,10 @@ function App() {
     <Route path='reset' element={<ResetPass/>}/>
     <Route path='Resett' element={<Resett/>}/>
     <Route path='resetpasfinal' element={<Resetpasfinal/>}/>
-    <Route path='Signup' element={<Ongoing/>}/>
+    <Route path='Signup' element={<SignUp/>}/>
+    <Route path='Signup2' element={<SignUp2/>}/>
+    <Route path='Signup3' element={<SignUp3/>}/>
+    <Route path='SignUpp' element={<SignUpp/>}/>
     <Route path='*' element={<Error/>}/>
     
     </Route>
